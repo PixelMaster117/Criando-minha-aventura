@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada do Artefato Mágico</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="inicio.png" alt="">
+            <p>Em uma noite estrelada, você encontra um velho diário empoeirado em uma loja de antiguidades. O diário fala sobre um artefato mágico perdido, capaz de conceder desejos. Sua jornada começa agora. Para onde você irá primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">Egito</button>
+            <button class="btn-proximo" data-proximo="2">Japão</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você chega ao Egito, onde as pirâmides guardam segredos antigos. Onde você começa sua busca?</p>
+            <button class="btn-proximo" data-proximo="3">Explorar as Pirâmides</button>
+            <button class="btn-proximo" data-proximo="4">Visitar o Rio Nilo</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>No Japão, você descobre que o artefato pode estar escondido em um antigo templo nas montanhas. O que você fará?</p>
+            <button class="btn-proximo" data-proximo="5">Subir a montanha</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a floresta ao redor</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Dentro das pirâmides, você encontra um sarcófago antigo com inscrições que indicam que a próxima pista está na Grécia.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a Grécia</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="rio-nilo.png" alt="Rio Nilo ao pôr do sol">
+            <p>No Rio Nilo, você conhece um ancião que conta histórias sobre um artefato perdido, mas não encontra nenhuma pista.</p>
+            <button class="btn-proximo" data-proximo="1">Voltar e explorar as pirâmides</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Subindo a montanha, você encontra um portão guardado por espíritos antigos. Eles só deixam passar aqueles que provam sua coragem.</p>
+            <button class="btn-proximo" data-proximo="7">Enfrentar os espíritos</button>
+            <button class="btn-proximo" data-proximo="8">Buscar outra entrada</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando a floresta, você encontra um santuário escondido, mas ele não leva a lugar algum.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar e subir a montanha</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Na Grécia, você encontra um oráculo que revela a localização do artefato em uma caverna secreta nas Ilhas Gregas.</p>
+            <button class="btn-proximo" data-proximo="9">Explorar a caverna</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <img src="fim-da-jornada.png" alt="Vista de uma montanha com o pôr do sol ao fundo">
+            <p>Buscando outra entrada, você se perde nas montanhas e nunca encontra o artefato. Sua jornada termina aqui.</p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="artefato.png" alt="Artefato mágico brilhando na caverna">
+            <p>Dentro da caverna, você finalmente encontra o artefato mágico, brilhando com uma luz suave. Sua aventura foi um sucesso!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
